@@ -10,7 +10,7 @@ Automat==20.2.0
 Babel==2.8.0
 backcall==0.1.0
 backports.weakref==1.0.post1
-bleach==1.5.0
+bleach==3.1.4
 boto3==1.4.4
 botocore==1.5.95
 cachetools==4.1.0
