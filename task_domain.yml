@@ -1,0 +1,58 @@
+slots: 
+  add_task: 
+    type: text
+  date: 
+    type: text
+  finish: 
+    type: text
+  task_get: 
+    type: text
+  time: 
+    type: text
+    
+intents: 
+  - greeting
+  - get_task
+  - user_date
+  - completed_tasks
+  - add_to_next
+  - goodbye
+
+entities: 
+  - time
+  - task_get
+  - date
+  - add_task
+  - finish
+
+templates: 
+  utter_add_to_next: 
+    - "Should I add them to tomorrow task? Please Enter Yes or No"
+  utter_ask_complete_task: 
+    - "Did you complete all your tasks? Please reply with Yes or No"
+    - "Did you finish all your days tasks? Please reply with Yes or No"
+  utter_ask_day: 
+    - "What todays date in this format DD-MM-YYYY or simply DD?"
+    - "What date is today in this format DD-MM-YYYY or simply DD?"
+  utter_ask_task: 
+    - "Are you ready for todays work?"
+    - "Are you ready to start your days task?"
+  utter_goodbye: 
+    - "Goodbye!"
+    - "Its nice talking to you"
+    - "Talk to you later!"
+  utter_greet: 
+    - "Hello! How are you doing today?"
+    - "How are you Today?"
+    - "Hello! How can I help you?"
+
+actions: 
+  - utter_greet
+  - utter_ask_task
+  - utter_ask_day
+  - utter_ask_complete_task
+  - utter_add_to_next
+  - actions.GetTodaysTask
+  - actions.Completed
+  - actions.AddtoNext
+  - utter_goodbye
