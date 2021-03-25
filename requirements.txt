@@ -116,7 +116,7 @@ python-crfsuite==0.9.7
 python-dateutil==2.8.1
 python-telegram-bot==12.7
 pytz==2020.1
-PyYAML==5.3.1
+PyYAML==5.4
 pyzmq==18.1.1
 rasa-core==0.8.2
 rasa-core-sdk==0.14.0
